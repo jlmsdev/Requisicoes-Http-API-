@@ -2,6 +2,7 @@
 Fazendo requiscoes http com Js puro atraves do Fetch()
 
 * Link do Projeto em produção
+<a href="https://apinutriappjlms.netlify.app/">NutriApp</a>
 
 ```
 
