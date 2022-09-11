@@ -1,6 +1,8 @@
 # Requisicoes-Http-API-
 Fazendo requiscoes http com Js puro atraves do Fetch()
 
+* Link do Projeto em produção
+
 ```
 
 let listaElementos = document.querySelector('#app');
@@ -9,12 +11,14 @@ let posts = [];
 
 function nutriApp() {
     
-    fetch(url)
-    .then((r)=> r.json())
+    fetch(url) --Acessando a URL para requisicao
+    .then((r)=> r.json()) -- transformando a requisicao em json
     .then((json)=> {
-        posts = json;
+        posts = json; -- passando o json para lista vazia
 
-        posts.map((item)=> {
+
+        *** criando os elementos HTML via Javascript para renderizar na tela
+        posts.map((item)=> { --usando o .map() para iterar a cada item do meu Array
 
             let elementoLi = document.createElement('li');
             let tituloElemento = document.createElement('strong');
